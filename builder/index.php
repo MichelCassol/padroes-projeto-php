@@ -1,15 +1,11 @@
 <?php
+require_once __DIR__ . '/classes/main-dish-builder.php';
 
-require_once __DIR__ . '/classes/mealBox.php';
-require_once __DIR__ . '/classes/meals.php';
+$mainDishBuilder = new MainDishBuilder();
+$price = $mainDishBuilder
+  ->makeMeal()
+  ->makeBeverage()
+  ->getMeal()
+  ->getPrice();
 
-$rice = new Rice(10);
-$beans = new Beans(10);
-$beverage = new Beverage(10);
-$meat = new Meat(10);
-$dessert = new Dessert(10);
-
-$mealBox = new MealBox(); 
-$mealBox->add($rice, $beans, $beverage, $meat, $dessert);
-
-echo $mealBox->getPrice();
+echo $price;
