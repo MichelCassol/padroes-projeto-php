@@ -3,22 +3,22 @@
 require_once __DIR__ ."/../interfaces/prototypeInterface.php";
 require_once __DIR__ ."/address.php";
 
-class Prototype1 implements PrototypeInterface 
+class PrototypeShallowCopy implements PrototypeInterface 
 {
-  private $name;
+  private string $name;
 
-  private $age;
+  private int $age;
 
-  private $address;
+  private Address $address;
 
-  public function __construct($name, $age, $address)
+  public function __construct(string $name, int $age, Address $address)
   {
     $this->name = $name;
     $this->age = $age;
     $this->address = $address;
   }
 
-  public function setAddress($address)
+  public function setAddress(Address $address): void
   {
     $this->address = $address;
   }
@@ -28,12 +28,12 @@ class Prototype1 implements PrototypeInterface
     return $this->address;
   }
 
-  public function setName($name)
+  public function setName(string $name): void
   {
     $this->name = $name;
   }
 
-  public function setAge($age)
+  public function setAge(int $age): void
   {
     $this->age = $age;
   }
