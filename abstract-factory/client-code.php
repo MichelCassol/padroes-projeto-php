@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/factories/entreprise-customer-vehicle-factory.php';
-require_once __DIR__ . '/factories/individual-customer-vehicle-factory.php';
+require_once __DIR__ . '/abstract-factories/entreprise-customer-vehicle-factory.php';
+require_once __DIR__ . '/abstract-factories/individual-customer-vehicle-factory.php';
 
 $entrepriseFactory = new EntrepriseCustomerVehicleFactory();
 $individualFactory = new IndividualCustomerVehicleFactory();
