@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/customer-protocol.php';
+require_once __DIR__ . '/../customer/customer-protocol.php';
 
 interface VehicleProtocol 
 {

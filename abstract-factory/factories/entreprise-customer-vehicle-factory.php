@@ -1,8 +1,10 @@
 <?php
 
+require_once __DIR__ . '/customer-vehicle-factory.php';
 require_once __DIR__ . '/../customer/customer-protocol.php';
 require_once __DIR__ . '/../vehicle/vehicle-protocol.php';
-require_once __DIR__ . '../vehicle/entreprise-car.php';
+require_once __DIR__ . '/../vehicle/entreprise-car.php';
+require_once __DIR__ . '/../customer/entreprise-customer.php';
 
 class EntrepriseCustomerVehicleFactory implements CustomerVehicleFactory
 {

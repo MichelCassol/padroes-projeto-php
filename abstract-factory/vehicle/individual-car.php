@@ -14,6 +14,7 @@ class IndividualCar implements VehicleProtocol
   }
   public function pickUP(): void 
   {
-    var_export("$this->name esta buscando $this->customer->getName()");
+    var_export("$this->name esta buscando " . $this->customer->getName() . " (INDIVIDUAL)");
+    echo PHP_EOL;
   }
 }

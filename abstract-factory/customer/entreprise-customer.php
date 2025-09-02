@@ -7,7 +7,7 @@ class EntrepriseCustomer implements CustomerProtocol
   private string $name;
   public function __construct(string $name)
   {
-    $this->name = $name;
+    $this->name = $name . ' (ENTREPRISE)';
   }
 
   public function getName(): string
