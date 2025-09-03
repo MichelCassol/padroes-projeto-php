@@ -6,6 +6,11 @@ require_once __DIR__ . '/../vehicle/vehicle-interface.php';
 
 class CarFactory extends VehicleFactory
 {
+  /**
+   * Factory method
+   * @param string $vehicleName
+   * @return Car
+   */
   public function getVehicle(string $vehicleName): Vehicle
   {
     return new Car($vehicleName);
