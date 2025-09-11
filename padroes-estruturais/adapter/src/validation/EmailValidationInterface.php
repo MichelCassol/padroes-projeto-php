@@ -1,6 +1,6 @@
 <?php
 
-namespace Root\App\Validation;
+namespace Root\App\validation;
 
 interface EmailValidationInterface
 {

@@ -1,9 +1,10 @@
 <?php
 
-namespace Root\App\Validation;
+namespace Root\App\validation;
 
 use Egulias\EmailValidator\EmailValidator;
 use Egulias\EmailValidator\Validation\RFCValidation;
+use Root\App\validation\EmailValidationInterface;
 
 class EmailValidationAdapter implements EmailValidationInterface
 {

@@ -2,9 +2,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Root\App\Validation\EmailValidationAdapter;
-use Root\App\Validation\EmailValidationInterface;
-
+use Root\App\validation\EmailValidationAdapter;
+use Root\App\validation\EmailValidationInterface;
 
 function validaEmail(EmailValidationInterface $emailValidator, string $email) : void {
   if ($emailValidator->isValid($email)) {
