@@ -6,7 +6,7 @@ class tShirt implements ProductProtocol
 {
   public function getName(): string
   {
-    return 'Camiseta' . PHP_EOL;
+    return 'Camiseta ';
   }
 
   public function getPrice(): float

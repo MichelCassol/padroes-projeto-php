@@ -4,7 +4,7 @@ require_once __DIR__ . '/ProductProtocol.php';
 
 class ProductDecorator implements ProductProtocol
 {
-  protected $product;
+  protected ProductProtocol $product;
 
   public function __construct(ProductProtocol $product)
   {
