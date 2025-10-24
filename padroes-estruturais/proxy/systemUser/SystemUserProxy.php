@@ -4,6 +4,8 @@ require_once __DIR__ . '/interfaces/SystemUserInterface.php';
 require_once __DIR__ . '/interfaces/SystemUserAddressInterface.php';
 require_once __DIR__ . '/AdminUser.php';
 
+// Essa classe implementa o padrão proxy
+
 class SystemUserProxy implements SystemUserInterface
 {
   private ?SystemUserInterface $realUser = null;
