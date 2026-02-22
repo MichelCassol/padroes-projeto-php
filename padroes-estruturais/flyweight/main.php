@@ -15,3 +15,28 @@ $deliveryContext->deliveryContext(
   'Rua A',
   'Cidade X'
 );
+
+echo '---' . PHP_EOL;
+
+$deliveryContext->deliveryContext(
+  $factory,
+  'Renato',
+  '321',
+  'Rua A',
+  'Cidade X'
+);
+
+echo '---' . PHP_EOL;
+
+$deliveryContext->deliveryContext(
+  $factory,
+  'Marcelo',
+  '456',
+  'Rua A',
+  'Cidade X'
+);
+
+
+echo '---' . PHP_EOL;
+
+var_export($factory->getLocations()->getLocations());
