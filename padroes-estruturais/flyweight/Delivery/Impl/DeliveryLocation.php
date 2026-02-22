@@ -1,5 +1,10 @@
 <?php
 
+namespace App\Delivery\Impl;
+
+use App\Delivery\DeliveryInterface;
+use App\Types\TypesDataInterface;
+
 class DeliveryLocation implements DeliveryInterface
 {
   private TypesDataInterface $intrinsicState;
@@ -16,4 +21,3 @@ class DeliveryLocation implements DeliveryInterface
     echo "Número: $number" . PHP_EOL;
   }
 }
-

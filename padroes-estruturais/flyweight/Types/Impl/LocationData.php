@@ -1,6 +1,10 @@
 <?php
 
-class LocationData implements TypesDataInterface 
+namespace App\Types\Impl;
+
+use App\Types\TypesDataInterface;
+
+class LocationData implements TypesDataInterface
 {
   private $street;
   private $city;
