@@ -1,6 +1,8 @@
 <?php
 
-namespace Strategy;
+namespace Strategy\Product\Impl;
+
+use Strategy\Product\ECommerceProductInterface;
 
 class ECommerceProduct implements ECommerceProductInterface
 {

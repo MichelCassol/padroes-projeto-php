@@ -1,11 +1,19 @@
 <?php
 
-namespace Strategy;
+namespace Strategy\ECommerceShopping;
+
+use Strategy\Discounts\Impl\DiscountStrategy;
+use Strategy\Product\ECommerceProductInterface;
 
 class ECommerceShoppingCart
 {
   private array $products;
-  private $discountStrategy = new DiscountStrategy;
+  private DiscountStrategy $discountStrategy;
+
+  public function __construct()
+  {
+    $this->discountStrategy = new DiscountStrategy;
+  }
 
   public function addProduct(ECommerceProductInterface $products) 
   {
@@ -20,7 +28,7 @@ class ECommerceShoppingCart
   {
     return array_reduce(
       $this->products, 
-      function (float $sum, ECommerceProductInterface $product): float {
+      function (?float $sum, ECommerceProductInterface $product): float {
         return $sum + $product->getPrice();
       }
     );
@@ -29,5 +37,15 @@ class ECommerceShoppingCart
   public function getTotalWithDiscount(): float
   {
     return $this->discountStrategy->getDiscount($this);
+  }
+
+  public function __set($name, $value)
+  {
+    $this->$name = $value;
+  }
+
+  public function __get($name)
+  {
+    return $this->$name;
   }
 }

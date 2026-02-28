@@ -1,9 +1,13 @@
 <?php
-namespace Strategy;
-
 require_once 'autoload.php';
 
+use Strategy\Discounts\Impl\NewDiscount;
+use Strategy\ECommerceShopping\ECommerceShoppingCart;
+use Strategy\Product\Impl\ECommerceProduct;
+
 $shoppingCart = new ECommerceShoppingCart();
+// $shoppingCart->discountStrategy = new DefaultDiscount();
+$shoppingCart->discountStrategy = new NewDiscount();
 $product = new ECommerceProduct();
 
 $product->setName('Produto 1');
