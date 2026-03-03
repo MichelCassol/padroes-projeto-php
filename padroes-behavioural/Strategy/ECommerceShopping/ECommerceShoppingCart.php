@@ -1,9 +1,9 @@
 <?php
 
-namespace Strategy\ECommerceShopping;
+namespace ECommerceShopping;
 
-use Strategy\Discounts\Impl\DiscountStrategy;
-use Strategy\Product\ECommerceProductInterface;
+use Discounts\Impl\DiscountStrategy;
+use Products\ECommerceProductInterface;
 
 class ECommerceShoppingCart
 {

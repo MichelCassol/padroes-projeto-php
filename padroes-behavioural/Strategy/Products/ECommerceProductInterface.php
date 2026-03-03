@@ -1,6 +1,6 @@
 <?php
 
-namespace Strategy\Product;
+namespace Products;
 
 interface ECommerceProductInterface 
 {

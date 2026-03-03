@@ -1,8 +1,8 @@
 <?php
 
-namespace Strategy\Discounts\Impl;
+namespace Discounts\Impl;
 
-use Strategy\ECommerceShopping\ECommerceShoppingCart;
+use ECommerceShopping\ECommerceShoppingCart;
 
 class NewDiscount extends DiscountStrategy
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Strategy\Discounts\Impl;
+namespace Discounts\Impl;
 
-use Strategy\Discounts\Impl\DiscountStrategy;
-use Strategy\ECommerceShopping\ECommerceShoppingCart;
+use Discounts\Impl\DiscountStrategy;
+use ECommerceShopping\ECommerceShoppingCart;
 
 class DefaultDiscount extends DiscountStrategy
 {

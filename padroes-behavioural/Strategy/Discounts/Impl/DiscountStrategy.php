@@ -1,9 +1,9 @@
 <?php
 
-namespace Strategy\Discounts\Impl;
+namespace Discounts\Impl;
 
-use Strategy\Discounts\DiscountInterface;
-use Strategy\ECommerceShopping\ECommerceShoppingCart;
+use Discounts\DiscountInterface;
+use ECommerceShopping\ECommerceShoppingCart;
 
 class DiscountStrategy implements DiscountInterface
 {

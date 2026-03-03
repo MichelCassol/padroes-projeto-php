@@ -1,9 +1,9 @@
 <?php
 require_once 'autoload.php';
 
-use Strategy\Discounts\Impl\NewDiscount;
-use Strategy\ECommerceShopping\ECommerceShoppingCart;
-use Strategy\Product\Impl\ECommerceProduct;
+use Discounts\Impl\NewDiscount;
+use ECommerceShopping\ECommerceShoppingCart;
+use Products\Impl\ECommerceProduct;
 
 $shoppingCart = new ECommerceShoppingCart();
 // $shoppingCart->discountStrategy = new DefaultDiscount();

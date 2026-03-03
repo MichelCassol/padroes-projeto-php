@@ -1,8 +1,8 @@
 <?php
 
-namespace Strategy\Discounts;
+namespace Discounts;
 
-use Strategy\ECommerceShopping\ECommerceShoppingCart;
+use ECommerceShopping\ECommerceShoppingCart;
 
 interface DiscountInterface
 {
